@@ -1,0 +1,4 @@
+# Create 3 color palette:
+magick xc:red xc:white xc:black +append palette.gif
+# Image dithering using Floyd-Steinberg:
+magick input_image.png -remap palette.gif result_image.png
